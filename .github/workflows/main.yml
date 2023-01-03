@@ -30,10 +30,7 @@ jobs:
                     run_install: true
 
             -   name: Validate 🔎
-                run: pnpm run validate_apps
-
-            -   name: Format 📋
-                run: pnpm run formatter-write
+                run: pnpm run validate
 
             -   name: Build 🏗
                 if: ${{ github.event_name == 'push' }}
